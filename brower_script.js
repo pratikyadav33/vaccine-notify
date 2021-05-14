@@ -21,8 +21,7 @@ async function details(){
         var list;
         let x = await fetch(url);
         list = await x.json();
-        console.log("Searching........");
-
+          console.log("Searching slots for pincode =="+user_pin+" And Age == "+user_age);
 
 
         var total_centers = list.centers.length;
