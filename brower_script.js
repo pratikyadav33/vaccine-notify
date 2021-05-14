@@ -1,5 +1,13 @@
-var user_age = 45;
-var user_pin = "403702";
+var user_age = 18; //ENTER YOUR AGE HERE
+
+var user_pin = "453331"; //ENTER YOUR PINCODE
+
+
+console.log("Search Started....... ")
+
+console.log("Script will open the browser if the Found open slots ")
+
+
 
 async function details(){
 
@@ -13,7 +21,7 @@ async function details(){
         var list;
         let x = await fetch(url);
         list = await x.json();
-        console.log("MADE REQUEST");
+        console.log("Searching........");
 
 
 
@@ -28,7 +36,8 @@ async function details(){
                 if(age <= user_age && capicity >0){
                     window.open("https://selfregistration.cowin.gov.in/", "_blank");
                     window.open("https://www.youtube.com/watch?v=vE2ETqUGj6Q&autoplay=1", "myWindow", "width=400,height=400");
-                    
+                    console.log(list)
+                    console.log("FOUND SLOT");                
                     found = true;
                     clearInterval(_run);              
                     break;
