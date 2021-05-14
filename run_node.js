@@ -1,11 +1,14 @@
 
-var user_age = 45; //ENTER YOUR AGE HERE
+var user_age = 23; //ENTER YOUR AGE HERE
 
-var user_pin = "403702"; //ENTER YOUR PINCODE
+var user_pin = "453331"; //ENTER YOUR PINCODE
 
 var mobile ="1234567899"; //ENTER YOUR PHONE NUMBER
 
 
+console.log("Search Started....... ")
+
+console.log("Script will open the browser if the Found open slots ")
 
 const fetch = require("node-fetch");
 const open = require('open');
@@ -35,7 +38,7 @@ async function details(){
         });
         list = await list.json();
         //console.log(list);
-        console.log("Searching......");
+        console.log("Searching...........");
 
 
 
@@ -49,7 +52,7 @@ async function details(){
                 var age = list.centers[i].sessions[j].min_age_limit;
                 if(age <= user_age && capicity >0){
                     console.log(list);
-                    console.log("Found Open Slots.........");
+                    console.log("Found Open Slots");
                     _open = true;
                     clearInterval(_run);              
                     break;
