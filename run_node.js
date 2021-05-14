@@ -35,7 +35,7 @@ async function details(){
         });
         list = await list.json();
         //console.log(list);
-        console.log("MADE REQUEST");
+        console.log("Searching......");
 
 
 
@@ -49,7 +49,7 @@ async function details(){
                 var age = list.centers[i].sessions[j].min_age_limit;
                 if(age <= user_age && capicity >0){
                     console.log(list);
-                    console.log("Found Open Slots");
+                    console.log("Found Open Slots.........");
                     _open = true;
                     clearInterval(_run);              
                     break;
