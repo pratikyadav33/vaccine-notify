@@ -38,7 +38,7 @@ async function details(){
         });
         list = await list.json();
         //console.log(list);
-        console.log("Searching...........");
+           console.log("Searching slots for pincode =="+user_pin+" And Age == "+user_age);
 
 
 
